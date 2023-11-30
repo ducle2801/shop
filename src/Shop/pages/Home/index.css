@@ -1,0 +1,159 @@
+.card {
+  aspect-ratio: 1;
+  outline: calc(250px / 2) solid #0009;
+  outline-offset: calc(250px / -2);
+  cursor: pointer;
+  transition: 0.3s;
+  /* background-image: url("../../../assets/banner.png"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.card:hover {
+  outline: 8px solid #1b9eeb;
+  outline-offset: 14px;
+  transform: scale3d(1.05, 1.05, 1);
+  -webkit-transition: all 0.5s ease;
+}
+
+.card {
+  position: relative;
+}
+.card::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.card:hover::before {
+  -webkit-animation: shine 1.5s;
+  animation: shine 1.5s;
+}
+
+.card2 {
+  aspect-ratio: 1;
+  outline: calc(250px / 2) solid #0009;
+  outline-offset: calc(250px / -2);
+  cursor: pointer;
+  transition: 0.3s;
+  /* background-image: url('../../../assets/banner2.png'); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.card2:hover {
+  outline: 8px solid #1b9eeb;
+  outline-offset: 14px;
+  transform: scale3d(1.05, 1.05, 1);
+  -webkit-transition: all 0.5s ease;
+}
+
+.card2 {
+  position: relative;
+}
+.card2::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.card2:hover::before {
+  -webkit-animation: shine 1.5s;
+  animation: shine 1.5s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.btncontainer {
+  margin-top: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.btncontainer a {
+  padding: 7px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2ea44f;
+  /* color: #ffffff; */
+  cursor: pointer;
+  width: 50px;
+}
+.btncontainer a:hover {
+  background: #2ea44f;
+  color: #ffffff;
+}
+.paginationActive a {
+  background: #2ea44f;
+  color: #ffffff;
+}
+.previous,
+.next {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}

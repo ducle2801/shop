@@ -1,0 +1,28 @@
+.container-footer {
+  max-width: 100%;
+  background-color: #f9f9f9;
+  width: 100%;
+  color: black;
+}
+.thong-tin {
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.5s ease;
+  /* color: #309345; */
+  -webkit-text-decoration-skip: objects;
+}
+.thong-tin:hover {
+  color: #309345;
+  text-decoration: none;
+  transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+.thong-tin::before {
+  position: absolute;
+  top: 20px;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #309345;
+  transition: 0.5s ease-out;
+}

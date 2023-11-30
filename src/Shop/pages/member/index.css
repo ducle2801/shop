@@ -1,0 +1,222 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.cardm:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.cardm {
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.cardm h1 {
+  text-align: center;
+}
+.animation_spin {
+  animation: spin 6s linear infinite;
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+.cardm .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: rgb(46, 140, 65);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+.cardm .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.cardm .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.cardm .additional .user-card .level,
+.cardm .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.cardm .additional .user-card .points {
+  top: 85%;
+}
+
+.cardm .additional .user-card svg {
+  top: 50%;
+}
+
+.cardm .additional .more-info {
+  width: 350px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.cardm .additional .more-info h1 {
+
+  margin-bottom: 0;
+}
+
+.cardm.green .additional .more-info h1 {
+  color: #224c36;
+}
+
+.cardm .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.cardm.green .additional .coords {
+  color: #325c46;
+}
+
+.cardm .additional .coords span + span {
+  float: right;
+}
+
+.cardm .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.cardm.green .additional .stats {
+  color: #325c46;
+}
+
+.cardm .additional .stats > div {
+  flex: 1;
+  text-align: center;
+  
+}
+
+.cardm .additional .stats i {
+  display: block;
+}
+
+.cardm .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cardm .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.cardm .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+.member {
+  width: 100%;
+  height: 80vh;
+  /* background-color: rgba(236, 241, 251, 0.3); */
+}
+.cardm .general {
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+  background-color: rgb(71, 216, 100);
+}
+.general::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgb(46, 140, 65);
+  top: -60%;
+  right: -50%;
+  z-index: 0;
+}
+.general::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(71, 216, 100);
+  top: -70%;
+  right: -50%;
+  z-index: 1;
+}
+
+.cardm .general .more {
+  position: absolute;
+  bottom: 5px;
+  right: 1rem;
+  font-size: 0.9em;
+}
+.thanhvien{
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  height: 100px;
+  font-size: 50px;
+  text-shadow: -15px 5px 20px #ced0d3;
+  /* letter-spacing: 0.02em; */
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;
+}
